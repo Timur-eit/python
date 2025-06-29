@@ -35,7 +35,7 @@ def validate_and_get_float(value):
   return result
   
 # запуск самого приложения выделен в функцию, чтобы не было лишних переменных в глобальной области видимости
-def app_start():
+def app():
   prompt_celsius = input('Введите температуру в градусах Цельсия: ')
   celsius_value = validate_and_get_float(prompt_celsius)
   fahrenheit_result = temperature_converter(celsius_value, FAHRENHEIT)
@@ -46,7 +46,7 @@ def app_start():
   celsius_result = temperature_converter(fahrenheit_value, CELSIUS)
   print(celsius_result, DEG_SYMBOL + CELSIUS)
 
-app_start()
+app()
 
 # для best practice лучше выносить функции в отдельные файлы,
 # но в учебных целях для первого задания, думаю, можно оставить так, мы пока не формально
