@@ -1,5 +1,5 @@
-def get_final_formatted_data(name: str, surname: str, login: str) -> str:
-  return f'{surname.title()} {name.title()}: {login}'
+def get_final_formatted_data(first_name: str, second_name: str, login: str) -> str:
+  return f'{second_name.title()} {first_name.title()}: {login}'
 
 def test_get_final_formatted_data():
   assert get_final_formatted_data('Иван', 'Иванов', 'ивани') == 'Иванов Иван: ивани'
