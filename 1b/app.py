@@ -11,13 +11,3 @@ def app() -> None:
 
 # Project 1_1B
 app()
-
-    
-  
-
-  
-
-
-
-
-  

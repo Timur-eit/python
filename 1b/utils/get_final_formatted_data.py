@@ -7,6 +7,3 @@ def test_get_final_formatted_data():
 
 test_get_final_formatted_data()
 print('Все тесты get_final_formatted_data пройдены')
-
-
-
