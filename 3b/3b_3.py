@@ -1,11 +1,17 @@
-words = []
+def acrostic() -> None:
+    words_list = []
 
-while True:
-    word = input("Введите слово (или пустую строку для окончания): ")
-    if word == "":
-        break
-    words.append(word)
+    while True:
+        new_word: str = input("Введите слово или пустую строку для завершения: ")
+        if new_word == "":
+            break
 
-result = "".join(w[0] for w in words if w)  # if w — на случай случайных пустых строк
+        words_list.append(new_word)
 
-print("Слово-акростих:", result)
+    first_letters: list[str] = [word[0] for word in words_list if word]
+    result = "".join(first_letters)
+
+    print("Слово-акростих:", result)
+
+
+acrostic()
