@@ -6,10 +6,11 @@ authors = [
     {name = "timur-eit"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9,<3.13"
 dependencies = [
     "pendulum (>=3.1.0,<4.0.0)",
-    "names (>=0.3.0,<0.4.0)"
+    "names (>=0.3.0,<0.4.0)",
+    "netmiko (>=4.6.0,<5.0.0)"
 ]
 
 
